@@ -1,0 +1,48 @@
+.section_hero{
+    background-color: rgba(12, 29, 55, 1);
+ 
+}
+.container_backround{
+    background-image: url(../images/erve.png);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+}
+.hero_title{
+    padding-top: 40px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    align-items: flex-end;
+    color: #FFFFFF;
+}
+
+.hero_text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+.hero_btn-box{
+    padding-bottom: 56px;
+}
+.hero_btn{
+    display: inline-block;
+    padding:12px 24px ;
+    color: rgba(255, 122, 0, 1);
+    background-color: #0C1D37;
+    border: 2px solid #FF7A00;
+    border-radius: 2px;
+    cursor: pointer;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            background-color: #FF7A00;
+            color: rgba(255, 255, 255, 1);
+        }
+        &:not(:last-child){
+            margin-right: 16px;
+        }
+}

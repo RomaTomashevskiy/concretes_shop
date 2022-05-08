@@ -4,18 +4,411 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Заголовок страницы</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-      crossorigin="anonymous"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap "
+    rel="stylesheet">
+    <!-- <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+    crossorigin="anonymous"
+    /> -->
   </head>
   <body>
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <include src="./partials/example.html"></include>
+     <header class="header">
+      <div class="container">
+          <nav class="header_site-nav">
+            <ul class="site-nav">
+                <li class="site-nav_item"> <a class="site-nav_link" href="">Арамиль, Базовая, 2а</a></li>
+                <li class="site-nav_item"> <a class="site-nav_link" href="mailto:ooo.zdsk@bk.ru">ooo.zdsk@bk.ru</a></li>
+                <li class="site-nav_item"> <a class="site-nav_link" href="tel:7-922-18-18-126">7 922 18-18-126</a></li>
+            </ul>
+          
+             <ul class="contacts">
+                <li class="contacts_item">
+                  <a class="contacts_link" href="tel:7-922-20-20-190">7 922 20-20-190</a>
+                  <a class="contacts_link" href="mailto:zdsk.pg@yandex.ru">zdsk.pg@yandex.ru</a>
+                </li>
+                <li class="contacts_item">
+                  <a class="contacts_link" href="tel:7-922-18-18-158">7 922 18-18-158</a>
+                  <a class="contacts_link" href="mailto:zdsk87@mail.ru">zdsk87@mail.ru</a>
+                </li>
+            </ul>
+          </nav>
+      </div>
+    </header> 
+    
+    <main>
 
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+       <section class="section_header">
+          <div class="container">
+            <ul class="page-links">
+              <li class="page_item">
+                <div class="logo_box">
+                  <img class="logo_img" src="./images/Group 2763.png" alt="" width="55px" height="55px">
+                  <p class="logo_text">ЗДСК</p>
+                  <p class="logo_description">Производство<br>железобетонных<br>конструкций</p>
+                </div>
+              </li>
+              <li class="page_item">
+                <img src="./images/Grid View.png" alt="" width="16px" height="16px">
+                <a class="page_link" href="">Каталог</a>
+              </li>
+              <li class="page_item">
+                <a class="page_link" href="">О производстве</a>
+              </li>
+              <li class="page_item">
+                <a class="page_link" href="">Новости</a>
+              </li>
+              <li class="page_item">
+                <a class="page_link" href="">Закупки</a>
+              </li>
+              <li class="page_item">
+                <a class="page_link" href="">Вакансии</a>
+              </li>
+              <li class="page_item">
+                <img  src="./images/Document with Lines.png" alt="" width="16px" height="16px">
+                <a class="page_link" href="">Прайс</a>
+              </li>
+              <li class="page_item">
+                <img src="./images/Search.png" alt="" width="24px" height="24px">
+                <a class="page_link" href="">Поиск</a>
+              </li>
+            </ul>
+          </div>     
+      </section> 
+
+      <section class="section_hero">
+        <div class="container container_backround">
+          <h1 class="hero_title">Производство<br>железобетонных<br>конструкций для<br>промышленных объектов</h1>
+          <p class="hero_text">
+            Компания чётко ориентируется на рынке,<br>продукции постоянно расширяется, при этом качество<br>продукции только растет. Все это отражается на ценовой<br>политике и позволяет поддерживать ее на низком уровне</p>
+          <div class="hero_btn-box">
+              <button class="hero_btn" type="button">Подробнее</button>
+              <button class="hero_btn" type="button">Заказать</button>
+          </div>
+        </div>
+      </section>  
+
+
+        <section class="section our_catalog">
+            <div class="container">
+              <h2 class="catalog_title">Наш каталог</h2>
+              <ul class="catalog_list">
+                <li class="catalog_item">
+                 <div class="catalog_box">
+                    <img class="catalog_img" src="./images/U_block 1.png" alt="" width="256px" height="156px">
+                    <h3 class="catalog_title-name">Лоток<br>Л 20.5 (УБК-2А)</h3>
+                    <p class="catalog_text">Д/Ш/В 3080х2060х580 мм<br>Вес 0,175 т | Объём 0,07 м3</p>
+                    <span class="catalog_price">15 200 Р/шт</span>
+                    <button class="catalog_basket" type="button">В корзину</button>
+                 </div>
+                </li> 
+                <li class="catalog_item">
+                  <div class="catalog_box">
+                    <img class="catalog_img" src="./images/U_block 2.png" alt="" width="256px" height="156px">
+                    <h3 class="catalog_title-name">Плита<br>П 10.5 (УБК-5)</h3>
+                    <p class="catalog_text">Д/Ш/В 995х495х60 мм<br>Вес 0,07 т | Объём 0,029 м3</p>
+                    <span class="catalog_price">27 333 Р/шт</span>
+                    <button class="catalog_basket" type="button">В корзину</button>
+                  </div>
+                </li>
+                <li class="catalog_item">
+                  <div class="catalog_box">
+                    <img class="catalog_img" src="./images/U_block 3.png" alt="" width="256px" height="156px">
+                    <h3 class="catalog_title-name">Кольцо стеновое<br>КС 10.3 / КЦ 10-3</h3>
+                    <p class="catalog_text">Д/Ш/В 1160х1160х290 мм<br>Вес 0,25 т | Объём 0,08 м3</p>
+                    <button class="catalog_request" type="button">По Запросу</button>
+                    <button class="catalog_basket" type="button">В корзину</button>
+                  </div>
+                </li>
+                <li class="catalog_item">
+                 <div class="catalog_box">
+                    <img class="catalog_img" src="./images/U_block 4.png" alt="" width="256px" height="156px">
+                    <h3 class="catalog_title-name">Плита<br>П 10.5 (УБК-5)</h3>
+                    <p class="catalog_text">Д/Ш/В 995х495х60 мм<br>Вес 0,07 т | Объём 0,029 м3</p>
+                    <span class="catalog_price">27 333 Р/шт</span>
+                    <button class="catalog_basket" type="button">В корзину</button>
+                 </div>
+                </li>
+                <li class="catalog_item">
+                 <div class="catalog_box">
+                    <img class="catalog_img" src="./images/U_block 5.png" alt="" width="256px" height="156px">
+                    <h3 class="catalog_title-name">Лоток<br>Л 20.5 (УБК-2А)</h3>
+                    <p class="catalog_text">Д/Ш/В 3080х2060х580 мм<br>Вес 0,175 т | Объём 0,07 м3</p>
+                    <span class="catalog_price">15 200 Р/шт</span>
+                    <button class="catalog_basket" type="button">В корзину</button>
+                 </div>
+                </li>
+                <li class="catalog_item">
+                  <div class="catalog_box">
+                    <img class="catalog_img" src="./images/U_block 6.png" alt="" width="256px" height="156px">
+                    <h3 class="catalog_title-name">Кольцо стеновое<br>КС 10.3 / КЦ 10-3</h3>
+                    <p class="catalog_text">Д/Ш/В 1160х1160х290 мм<br>Вес 0,25 т | Объём 0,08 м3</p>
+                    <button class="catalog_request" type="button">По Запросу</button>
+                    <button class="catalog_basket" type="button">В корзину</button>
+                  </div>
+                </li>
+                <li class="catalog_item">
+                  <div class="catalog_box">
+                    <img class="catalog_img" src="./images/U_block 7.png" alt="" width="256px" height="156px">
+                    <h3 class="catalog_title-name">Плита<br>П 10.5 (УБК-5)</h3>
+                    <p class="catalog_text">Д/Ш/В 995х495х60 мм<br>Вес 0,07 т | Объём 0,029 м3</p>
+                    <span class="catalog_price">27 333 Р/шт</span>
+                    <button class="catalog_basket" type="button">В корзину</button>
+                  </div>
+                </li>
+                <li class="catalog_item">
+                <div class="catalog_box">
+                    <img class="catalog_img" src="./images/U_block 8.png" alt="" width="256px" height="156px">
+                    <h3 class="catalog_title-name">Кольцо стеновое<br>КС 10.3 / КЦ 10-3</h3>
+                    <p class="catalog_text">Д/Ш/В 1160х1160х290 мм<br>Вес 0,25 т | Объём 0,08 м3</p>
+                    <button class="catalog_request" type="button">По Запросу</button>
+                    <button class="catalog_basket" type="button">В корзину</button>
+                </div>
+                </li>
+                <!-- <li class="catalog_item">
+                  <div class="catalog_box">
+                    <img class="catalog_img" src="./images/U_block 2.png" alt="" width="256px" height="156px">
+                    <h3 class="catalog_title-name">Плита<br>П 10.5 (УБК-5)</h3>
+                    <p class="catalog_text">Д/Ш/В 995х495х60 мм<br>Вес 0,07 т | Объём 0,029 м3</p>
+                    <span class="catalog_price">27 333 Р/шт</span>
+                    <button class="catalog_basket" type="button">В корзину</button>
+                  </div>
+                </li> -->
+              </ul>
+              <button class="catalog_all" type="button">
+                <img class="btn_icon" src="./images/Grid_View-white.png" alt="" width="24px" height="24px">
+                Весь каталог
+              </button>
+            </div>
+        </section>
+
+      <section>
+        <h2>О производстве</h2>
+            <ul>
+              <li>
+                <p>Наш завод ЖБИ основан в 2015 году В самом начале мы научились продавать и организовывать логистику для потребителей
+                железобетонных изделий. Затем мы пошли дальше. Что бы ни утонуть в современном, быстроменяющемся рынке ЖБИ изделий, где
+                вытесняются посредники государственными структурами и пожеланиями потребителей, коллективом ООО «ЗДСК» принято
+                решение, об организации производства ЖБИ изделий.</p>
+                <img src="./images/image 3.png" alt="" width="544px" height="308px">
+              </li>
+              <li>
+                <img src="./images/239_original 1.png" alt="" width="668px" height="310px">
+                <p>Производственные площади разместились в пригороде Екатеринбурга, где на сегодняшний день и продолжается производственный
+                процесс.
+                 Компания четко ориентируется на рынке, ассортимент продукции расширяется, при этом качество продукции только растёт.</p>
+              </li>
+              <li>
+                <p>Все это отражается на ценовой политике и позволяет поддерживать ее на достаточно низком уровне. В 2018 году было принято
+                решение о закупке нового оборудования EDIL STAMPI, KFPK PP, HANGCHA. Что позволило нашему заводу производить
+                железобетонные изделия в больших объемах. Новейшие технологические разработки позволяют выпускать продукцию высочайшего
+                качества, которая полностью соответствует как российским, так и зарубежным стандартам.</p>
+                <img src="./images/image 5.png" alt="" width="544px" height="322px">
+              </li>
+            </ul>
+      </section>
+
+      <section>
+          <h2>Наши преимущества</h2>
+          <ul>
+            <li>
+              <!-- <svg> -->
+                <!-- <use></use> -->
+              <!-- </svg> -->
+              <h3>Эффективная ЛОГИСТИКА</h3>
+              <p>Готовы организовать поставку ЖБИ на ваши строительные объекты автомобильным или железнодорожным транспортом, для
+              перевозок используем свой автотранспорт, что существенно сокращает стоимость доставки продукци</p>
+            </li>
+            <li>
+              <!-- <svg> -->
+                <!-- <use></use> -->
+              <!-- </svg> -->
+              <h3>НАДЁЖНОСТЬ И ОПЫТ</h3>
+              <p>Наш завод ЖБИ работает на строительном рынке уже более пяти лет. За это время мы честным трудом заработали свое доброе
+              имя и деловую репутацию, которыми дорожит каждый сотрудник компании. За эти годы наш коллектив накопил ценнейшие знания,
+              которые теперь используются на благо ваших интересов.</p>
+            </li>
+            <li>
+              <!-- <svg> -->
+                <!-- <use></use> -->
+              <!-- </svg> -->
+              <h3>ГИБКИЕ ФИНАНСОВЫЕ УСЛОВИЯ</h3>
+              <p>Мы дорожим каждым клиентом, с пониманием относимся к потребностям и возможностям заказчика при определении условий
+              сотрудничества. Менеджеры компании всегда готовы сделать сотрудничество обоюдовыгодным.</p>
+            </li>
+            <li>
+              <!-- <svg> -->
+                <!-- <use></use> -->
+              <!-- </svg> -->
+              <h3>КАЧЕСТВО ПРОДУКЦИИ</h3>
+              <p>Вся продукция нашего завода ЖБИ строго соответствует требованиям ГОСТ. Мы тщательно отбираем поставщиков сырья для
+              нашего производства. В штате компании работают только опытные специалисты, что обеспечивает профессиональный и
+              внимательный контроль качества продукции на всех этапах производства.</p>
+            </li>
+            <li>
+              <!-- <svg> -->
+                <!-- <use></use> -->
+              <!-- </svg> -->
+              <h3>ИНДИВИДУАЛЬНЫЙ ЗАКАЗ</h3>
+              <p>Наличие современного оборудования, собственный металлоцех, паровые камеры, цех изготовления бетонной смеси и
+              специалисты. Мы готовы поставить железобетонные изделия любой сложности, возьмемся за изготовление нестандартных изделий
+              по вашим чертежам и проектам.</p>
+            </li>
+          </ul>
+      </section>
+
+
+      <section>
+        <h2>Новости</h2>
+          <ul>
+            <li>
+              <img src="./images/image 89.png" alt="" width="280px" height="185px">
+              <h3>Эксперты в области недвижимости высоко оценили работу «ЗДСК»</h3>
+              <p>22 февраля 2022</p>
+              <button type="button">Подробнее</button>
+            </li>
+            <li>
+              <img src="./images/image 91.png" alt="" width="270px" height="186px">
+              <h3>Изделия «ЗДСК» для одного из лучших в России спинальных центров</h3>
+              <p>15 января 2022</p>
+              <button type="button">Подробнее</button>
+            </li>
+            <li>
+              <img src="./images/image 92.png" alt="" width="291px" height="194px">
+              <h3>«ЗДСК» изготовила 30-тонные колонны очень сложной конфигурации</h3>
+              <p>28 апреля 2022</p>
+              <button type="button">Подробнее</button>
+            </li>
+            <li>
+              <img src="./images/image 89.png" alt="" width="280px" height="185px">
+              <h3>Эксперты в области недвижимости высоко оценили работу «ЗДСК»</h3>
+              <p>28 апреля 2022</p>
+              <button type="button">Подробнее</button>
+            </li>
+          </ul>
+      </section>
+
+      <section>
+        <h2>Связаться с нами</h2>
+
+        <form action="">
+            <label for="">
+              <input type="text" name="name">
+            </label>
+            <label for="">
+              <input type="text" name="email">
+            </label>
+            <label for="">
+              <textarea type="text" name="message">
+            </label>
+          <button type="submit">
+            <!-- <svg>
+              <use></use>
+            </svg> -->
+          Отправить
+          </button>
+        </form>
+      </section>
+
+
+
+
+      <section>
+        <ul>
+          <li>
+            <img src="./images/Group 2763.png" alt="" width="55px" height="55px">
+            <h1>ЗДСК</h1>
+            <p>Производство железобетонных конструкций</p>
+          </li>
+        </ul>
+
+        <label for="">
+             <!-- <svg>
+                <use></use>
+              </svg>  -->
+          <input type="text" name="" id="">
+        </label>
+
+      </section>
+    </main>
+
+    <footer>
+      <ul>
+        <li>
+          <!-- <svg>
+            <use></use>
+          </svg> -->
+            <a href="">Каталог</a>
+        </li>
+        <li><a href="">О производстве</a></li>
+        <li><a href="">Новости</a></li>
+        <li><a href="">Закупки</a></li>
+        <li>
+          <!-- <svg>
+                <use></use>
+              </svg> -->
+          <a href="">Прайс</a>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          Кольца колодезные
+          Лотки теплотрасс
+          Лотки кабельные
+          Лоток железобетонный ЛК
+          Лоток УБК
+          Плиты покрытия лотков теплотрасс
+          Плиты покрытия коллекторов
+          Плиты покрытия кабельных лотков
+          Днища колодезные
+
+        </li>
+          <li>
+            Аэродромные плиты
+            Вентиляционные блоки
+            Доборные балки
+            Дорожные плиты
+            Дорожные ограждения жби
+            Дорожный бордюр
+            Фундаменты дорожных знаков
+            Железобетонные стойки
+            Заборы ЖБИ
+          </li>
+          <li>
+            Плиты укрепления откосов
+            Прикромочные лотки
+            Железобетонные фермы
+            Приставки железобетонные
+            Ригель железобетонный
+            Стойки СКЦ
+            Стойки УСЩ
+            Телескопические лотки
+            Труба железобетонная
+          </li>
+      </ul>
+      
+      <nav>
+        <ul>
+          <li>
+            <a href="tel:7-922-20-20-190">7 922 20-20-190</a>
+            <a href="mailto:zdsk.pg@yandex.ru">zdsk.pg@yandex.ru</a>
+          </li>
+          <li>
+            <a href="tel:7-922-18-18-158">7 922 18-18-158</a>
+            <a href="mailto:zdsk87@mail.ru">zdsk87@mail.ru</a>
+          </li>
+        </ul>
+        <span>
+          <!-- <svg> -->
+            <!-- <use></use> -->
+          <!-- </svg> -->
+          Арамиль Базовая, 2а
+        </span>
+      </nav>
+    </footer>
+    
     <script src="./index.js"></script>
   </body>
 </html>

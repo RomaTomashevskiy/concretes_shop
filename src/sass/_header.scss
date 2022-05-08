@@ -1,0 +1,125 @@
+.header{
+    background-color: #0C1D37;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.header_site-nav{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.header_site-nav:before{
+    border-bottom: 1px solid #FFFFFF;
+    opacity: 0.15
+}
+.site-nav{
+    display: flex;
+}
+
+.site-nav_item:not(:last-child){
+    margin-right: 20px;
+}
+
+
+.site-nav_link{
+    display: inline-block;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 12px;
+    color: #7A8396;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: rgba(255, 122, 0, 1);
+        text-decoration: underline;
+    }
+}
+
+.contacts{
+    display: flex;
+}
+
+.contacts_item:not(:last-child){
+    margin-right: 20px;
+}
+.contacts_link{
+    display: inline-block;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 14px;
+    color: #FFFFFF;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        
+    &:hover,
+    &:focus {
+        color: rgba(255, 122, 0, 1);
+        text-decoration: underline;
+    }
+}
+
+// ======HEADER-TWO========
+.section_header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: rgba(12, 29, 55, 1);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.page-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.page_item{
+    display: inline-block;
+    align-items:flex-start;
+    
+}
+
+.logo_box{
+    display: flex;
+    vertical-align: bottom;
+    align-items: center;
+    margin-right: 64px;
+}
+
+
+.logo_img{
+    margin-right: 15px;
+}
+
+.logo_text{
+    font-weight: 700;
+    margin-right: 10px;
+    font-size: 48.175px;
+    line-height: 58px;
+    color: #FFFFFF;
+}
+
+.logo_description{
+    font-weight: 500;
+    font-size: 11.4416px;
+    line-height: 110%;
+    color: #7A8396;
+    margin-right: 63px;
+}
+
+.page_link{
+    display: inline-block;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 13px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus{
+        color: rgba(255, 122, 0, 1);
+        text-decoration: underline;
+    }
+}
